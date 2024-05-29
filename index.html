@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gestion des Employés</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Gestion des Employés</h2>
+        <table id="employeeTable">
+            <thead>
+                <tr>
+                    <th>Nom</th>
+                    <th>Prénom</th>
+                    <th>Téléphone</th>
+                    <th>Departement</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Rows will be added dynamically -->
+            </tbody>
+        </table>
+
+        <form id="employeeForm">
+            <input type="text" id="nom" placeholder="Nom Employee">
+            <input type="text" id="prenom" placeholder="Prénom">
+            <input type="text" id="telephone" placeholder="Numéro de téléphone">
+            <input type="text" id="departement" placeholder="Departement">
+            <button type="button" onclick="saveEmployee()">Envoyer</button>
+        </form>
+    </div>
+</body>
+</html>
